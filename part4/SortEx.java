@@ -25,7 +25,7 @@ public class SortEx{
      productlist.add(p5);
      
      System.out.println(productlist);
- 	 //Collections.sort(productlist);
+ 	 Collections.sort(productlist);
  	 Collections.sort(productlist,new SortByRatings());
  	 System.out.println("---After sorting ----");
  	 System.out.println(productlist);

@@ -2,7 +2,7 @@ package com.rakuten.oops.part4;
 
 
 
-public class Product {
+public class Product implements Comparable<Product> {
  private int id;
  private String  name;
  private float price;
