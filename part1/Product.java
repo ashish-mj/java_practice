@@ -8,7 +8,7 @@ public class Product {
 
 		
 	public void itemDetails() {
-        System.out;
+        
 	}
 	
 	public void setPrice(float price) {
