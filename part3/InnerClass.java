@@ -7,6 +7,8 @@ public class InnerClass {
      Outer outer=new Outer();
      Outer.Inner inner=outer.new Inner();
      inner.print();
+     Outer.Inner1 inn = new Outer.Inner1();
+     inn.print();
 	}
 
 }
@@ -14,9 +16,14 @@ public class InnerClass {
 class Outer{
 	int x=10;
 	class Inner{
-		int y=20;
+		int x=20;
 		void print() {
-			System.out.println("inner class method "+y);
+			System.out.println("inner class method "+Outer.this.x);
+		}
+	}
+	static class Inner1{
+		void print() {
+			System.out.println("Static inner class method ");
 		}
 	}
 	
