@@ -5,7 +5,7 @@ public class AnonymousClass {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
       Person p=new Person() { 
-    	  String get() {
+    	   public String get() {
     		  return "Im a superman";
     	  }
       };
@@ -14,8 +14,6 @@ public class AnonymousClass {
 
 }
 
-class Person{
-	String get() {
-		return "Im a person";
-	}
+interface Person{
+	String get();
 }
