@@ -19,8 +19,9 @@ public class Exercise2 {
 		studList.add(s3);
 		studList.add(s4);
 		studList.add(s5);
-		Student lastStudent=studList.stream().min((stud1,stud2)->(stud1.getMarks()<stud2.getMarks())?-1:1).get();
-		System.out.println("Topper  is "+lastStudent.getStudName());
+		studList.stream().sorted((stud1,stud2)->(stud1.getMarks()<stud2.getMarks())?-1:1).
+				forEach(e->System.out.println(e.getStudName()));
+		
 	}
 	}
 
