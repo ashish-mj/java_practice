@@ -4,8 +4,7 @@ public class Lambda3 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Calculator c= (a,b)-> a+b;
-		eval(c,12.2f,23.2f);
+		eval((a,b)->a+b,12.2f,23.2f);
 
 	}
 	
