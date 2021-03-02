@@ -13,6 +13,7 @@ public class ThrowEx1 {
 		int amount=sc.nextInt();
 		if (amount%100!=0)
 			throw new ArithmeticException();
+			
 		else
 			System.out.println("Successfull");
 
