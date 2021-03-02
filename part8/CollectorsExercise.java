@@ -21,6 +21,9 @@ public static void main(String[] args) {
 	System.out.println(cart);
 	Map<Boolean,List<ShoppingCart>> cart1= list.stream().collect(Collectors.partitioningBy(e->e.getPrice()>=5000));
 	System.out.println(cart1);
+	
+	Map<Integer, String> cart2= list.stream().collect(Collectors.toMap(e->e.getId(),e->e.getProductName()));
+	System.out.println(cart2);
 }
 }
 
