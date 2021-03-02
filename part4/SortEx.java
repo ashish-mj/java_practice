@@ -1,8 +1,11 @@
 package com.rakuten.oops.part4;
 
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Optional;
+
 
 
 public class SortEx{
@@ -27,7 +30,11 @@ public class SortEx{
  	 Collections.sort(productlist,new SortByRatings());
  	 System.out.println("---After sorting ----");
  	 System.out.println(productlist);
-
+ 	 
+ 	double s =  productlist.stream().mapToDouble(p->p.get_price()).sum();
+     System.out.println(s);
+     Optional<Product> p22 =productlist.stream().min((p10,p11)->(p10.get_price()>p11.get_price())?1:-1);
+     System.out.println(p22);
  }
  }
 

@@ -15,6 +15,14 @@ public class Product implements Comparable<Product> {
 	 this.ratings=ratings;
  }
  
+ public float get_price() {
+	 return this.price;
+ }
+ 
+ public String getProdName() {
+	 return this.name;
+ }
+ 
  @Override
  public String toString() {
 	 return "product [id - "+id+" Name - "+name+" Price - "+price+" Ratings - "+ratings+"]";
